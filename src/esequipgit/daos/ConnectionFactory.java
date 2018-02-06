@@ -8,7 +8,7 @@ import com.mysql.jdbc.Connection;
 public class ConnectionFactory {
 	
 	private static Connection con = null;
-	private static final String banco = "esequip_pds";
+	private static final String banco = "esequip";
 	private static final String user = "root";
 	private static final String password = "lab01";
 	

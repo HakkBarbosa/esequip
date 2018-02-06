@@ -9,6 +9,7 @@ public class OrdemServico {
 	private Cliente cliente;
 	private Equipamento equipamento;
 	private Long id; 
+	private String problema;
 	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Calendar dataSolicitacao;
 	@DateTimeFormat(pattern="dd/MM/yyyy")
@@ -36,6 +37,14 @@ public class OrdemServico {
 	
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public String getProblema() {
+		return problema;
+	}
+	
+	public void setProblema(String problema) {
+		this.problema = problema;
 	}
 	
 	public Calendar getDataSolicitacao() {
