@@ -31,8 +31,6 @@ public class EquipamentoController {
 		EquipamentoDAO dao = new EquipamentoDAO();
 		dao.inserir(e);
 		
-		System.out.println("alguma coisa");
-		
 		return "equipamentos/adicionado";
 	} 
 
@@ -54,6 +52,7 @@ public class EquipamentoController {
 	@RequestMapping(value="equipamentos/remover")
 	public String remover(Equipamento e) {
 		EquipamentoDAO dao = new EquipamentoDAO();
+		e = dao.getById(e.getId());
 		dao.remover(e);
 		
 		return "redirect:/equipamentos?id="+e.getCliente().getId();

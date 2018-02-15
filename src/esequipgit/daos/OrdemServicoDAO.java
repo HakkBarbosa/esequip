@@ -19,14 +19,13 @@ public class OrdemServicoDAO {
 	}
 	
 	public boolean inserir (OrdemServico ordemServico) {
-		String sql = "insert into ordemServico (problema, dataSolicitacao, dataFinalizacao)" + "values (?, ?, ?);";
+		String sql = "insert into ordemServico (problema, dataSolicitacao)" + "values (?, ?);";
 		
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			
 			stmt.setString(1, ordemServico.getProblema());
 			stmt.setDate(2, new java.sql.Date(ordemServico.getDataSolicitacao().getTimeInMillis()));
-			stmt.setDate(3, new java.sql.Date(ordemServico.getDataFinalizacao().getTimeInMillis()));
 			
 			stmt.execute();
 			stmt.close();

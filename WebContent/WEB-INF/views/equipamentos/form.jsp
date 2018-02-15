@@ -14,7 +14,7 @@
 		<div>
 			<label>ID Cliente: ${cliente.id} </label> <br>
 			<label>Nome do Cliente: ${cliente.nome} </label>
-			<input type="hidden" name="equipamento.id" value="${equipamento.id}" />
+			<input type="hidden" name="cliente.id" value="${cliente.id}" />
 		</div>
 		
 		<div>

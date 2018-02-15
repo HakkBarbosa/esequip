@@ -42,7 +42,7 @@
 
 				<td><a href="/esequip/equipamentos/remover?id=${equipamento.id}">Remover</a></td>
 				<td><a href="/esequip/equipamentos/selecionar?id=${equipamento.id}">Alterar</a></td>
-				<td><a href="/esequip/ordemServico/form?id=${equipamento.id}">Ordem de Serviço</a></td>
+				<td><a href="/esequip/ordens/form?id=${equipamento.id}">Ordem de Serviço</a></td>
 			</tr>
 		</c:forEach>
 
