@@ -8,6 +8,7 @@
 <title>Home - ESequip</title>
 </head>
 <body>
+	
 	<c:import url="menu.jsp"></c:import>
 
 	<h1>Bem vindo a ESequip!</h1>

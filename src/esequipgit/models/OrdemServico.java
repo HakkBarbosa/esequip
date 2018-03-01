@@ -62,4 +62,12 @@ public class OrdemServico {
 	public void setDataFinalizacao(Calendar dataFinalizacao) {
 		this.dataFinalizacao = dataFinalizacao;
 	}
+
+	@Override
+	public String toString() {
+		return "OrdemServico [cliente=" + cliente + ", equipamento=" + equipamento + ", id=" + id + ", problema="
+				+ problema + ", dataSolicitacao=" + dataSolicitacao + ", dataFinalizacao=" + dataFinalizacao + "]";
+	}
+	
+	
 }

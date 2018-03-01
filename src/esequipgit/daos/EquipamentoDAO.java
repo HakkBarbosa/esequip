@@ -46,7 +46,8 @@ public class EquipamentoDAO {
 		List <Equipamento> result = new ArrayList<>();
 		
 		try {
-			PreparedStatement stmt = this.connection.prepareStatement("select * from equipamentos");
+			PreparedStatement stmt = this.connection.prepareStatement("select * from equipamentos where cliente=?");
+			stmt.setLong(1, c.getId());
 			ResultSet rs = stmt.executeQuery();
 			
 			while (rs.next()) {

@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <c:import url="../menu.jsp"></c:import>
 <h1>Equipamento adicionado com sucesso!</h1>
 </body>

@@ -39,8 +39,10 @@ public class EquipamentoController {
 		ClienteDAO dao = new ClienteDAO();
 		cliente = dao.getById(cliente.getId());
 		
-		EquipamentoDAO dao_listar = new EquipamentoDAO();
-		List <Equipamento> equipamentos = dao_listar.getLista(cliente);
+		EquipamentoDAO equipamentoDAO = new EquipamentoDAO();
+		List <Equipamento> equipamentos = equipamentoDAO.getLista(cliente);
+		
+		System.out.println(equipamentos.size());
 		
 		ModelAndView modelAndView = new ModelAndView("equipamentos/listar");
 		modelAndView.addObject("equipamentos", equipamentos);
